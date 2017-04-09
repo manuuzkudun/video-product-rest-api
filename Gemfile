@@ -29,6 +29,8 @@ gem 'money-rails'
 group :development, :test do
   gem "database_cleaner"
   gem "rspec-rails"
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :test do

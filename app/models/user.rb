@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_many :purchases
   has_many :video_products, through: :purchases
+  validates_presence_of :email
 
   def active_movies
     self.purchases.select { |p| p.active? }
