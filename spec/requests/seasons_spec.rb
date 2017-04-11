@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Seasons API', type: :request do
+RSpec.describe 'Seasons endpoints for the API', type: :request do
   let!(:seasons) { FactoryGirl.create_list(:season, 5)  }
 
   describe 'GET /seasons' do

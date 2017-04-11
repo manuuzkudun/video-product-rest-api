@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Movies API', type: :request do
+RSpec.describe 'Movies endpoints for the API', type: :request do
   let!(:movies) { FactoryGirl.create_list(:movie, 5)  }
 
   describe 'GET /movies' do
