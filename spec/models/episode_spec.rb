@@ -19,6 +19,11 @@ RSpec.describe Episode, type: :model do
     expect(episode).to_not be_valid
   end
 
+  it "is not valid without a season" do
+    episode.season = nil
+    expect(episode).to_not be_valid
+  end
+
   describe "Associations" do
     it "belongs to a season" do
       assc = described_class.reflect_on_association(:season)
