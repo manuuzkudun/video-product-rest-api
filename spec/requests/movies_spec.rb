@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Movies API', type: :request do
-  let!(:movies) { FactoryGirl.create_list(:movie, 10)  }
+  let!(:movies) { FactoryGirl.create_list(:movie, 5)  }
 
   describe 'GET /movies' do
 
@@ -10,7 +10,7 @@ RSpec.describe 'Movies API', type: :request do
     it 'returns all the the movies' do
       # Note `json` is a custom helper to parse JSON responses
       expect(json).not_to be_empty
-      expect(json.size).to eq(10)
+      expect(json.size).to eq(5)
     end
 
     it 'return movies ordered by creation' do

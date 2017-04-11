@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'movies/index'
+  get 'seasons/index'
 
   resources :movies, only: [:index]
+  resources :seasons, only: [:index]
 end

@@ -18,10 +18,6 @@ RSpec.describe Episode, type: :model do
     episode.episode_in_season = nil
     expect(episode).to_not be_valid
   end
-  it "is not valid without a season" do
-    episode.season = nil
-    expect(episode).to_not be_valid
-  end
 
   describe "Associations" do
     it "belongs to a season" do
