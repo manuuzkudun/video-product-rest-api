@@ -18,9 +18,5 @@ RSpec.describe Purchase, type: :model do
     purchase.purchase_option = nil
     expect(purchase).to_not be_valid
   end
-  it "is not valid without a expiration" do
-    purchase.expiration = nil
-    expect(purchase).to_not be_valid
-  end
 
 end
