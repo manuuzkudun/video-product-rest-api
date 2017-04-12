@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe VideoProduct, type: :model do
-  subject(:video_product) { FactoryGirl.build(:video_product) }
+  subject(:video_product) { FactoryGirl.create(:video_product) }
   it "is valid with valid attributes" do
     expect(video_product).to be_valid
   end

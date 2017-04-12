@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Seasons endpoints for the API', type: :request do
   let!(:seasons) { FactoryGirl.create_list(:season, 5)  }
 
-  describe 'GET /seasons' do
-    before { get '/seasons' }
+  describe 'GET /api/seasons' do
+    before { get api_seasons_path }
 
     it 'returns all the Seasons' do
       # Note `json` is a custom helper to parse JSON responses

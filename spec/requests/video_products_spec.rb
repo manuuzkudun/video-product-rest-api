@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Video products endpoints for the API', type: :request do
   let!(:video_products) { FactoryGirl.create_list(:video_product, 10)  }
 
-  describe 'GET /video_products' do
-    before { get '/video_products' }
+  describe 'GET /api/video_products' do
+    before { get api_video_products_path }
 
     it 'returns all the video products(movies and seasons)' do
       # Note `json` is a custom helper to parse JSON responses

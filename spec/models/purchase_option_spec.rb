@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe PurchaseOption, type: :model do
-  subject(:purchase_option) { FactoryGirl.build(:purchase_option) }
+  subject(:purchase_option) { FactoryGirl.create(:purchase_option) }
 
   it "is valid with valid attributes" do
     expect(purchase_option).to be_valid

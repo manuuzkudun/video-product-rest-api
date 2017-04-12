@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject(:user) { FactoryGirl.build(:user) }
+  subject(:user) { FactoryGirl.create(:user) }
 
   it "is valid with valid attributes" do
     expect(user).to be_valid

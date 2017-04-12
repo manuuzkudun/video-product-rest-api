@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe 'Movies endpoints for the API', type: :request do
   let!(:movies) { FactoryGirl.create_list(:movie, 5)  }
 
-  describe 'GET /movies' do
+  describe 'GET /api/movies' do
 
-    before { get '/movies' }
+    before { get api_movies_path }
 
     it 'returns all the the movies' do
       # Note `json` is a custom helper to parse JSON responses

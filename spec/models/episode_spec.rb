@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Episode, type: :model do
-  subject(:episode) { FactoryGirl.build(:episode) }
+  subject(:episode) { FactoryGirl.create(:episode) }
 
   it "is valid with valid attributes" do
     expect(episode).to be_valid
